@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5902BEBA-6FDD-476B-81A4-E8B2D51AA553}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Theme_15</RootNamespace>
+    <AssemblyName>Theme_15</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AnimationData.cs" />
+    <Compile Include="Classes\Frames.cs" />
+    <Compile Include="Classes\Request.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menhera_chan\Eating.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eating.resx</DependentUpon>
+    </Compile>
+    <Compile Include="menhera_chan\Heal1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Heal1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="menhera_chan\Playing.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Playing.resx</DependentUpon>
+    </Compile>
+    <Compile Include="menhera_chan\Reactions_on_rejections.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reactions_on_rejections.resx</DependentUpon>
+    </Compile>
+    <Compile Include="menhera_chan\Sleep.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sleep.resx</DependentUpon>
+    </Compile>
+    <Compile Include="menhera_chan\Starting_animation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Starting_animation.resx</DependentUpon>
+    </Compile>
+    <Compile Include="menhera_chan\startSCR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>startSCR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="menhera_chan\States.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>States.resx</DependentUpon>
+    </Compile>
+    <Compile Include="menhera_chan\Whats_up_reactions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Whats_up_reactions.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menhera_chan\Eating.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Eating.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menhera_chan\Heal1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Heal1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menhera_chan\Playing.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Playing.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menhera_chan\Reactions_on_rejections.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Reactions_on_rejections.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menhera_chan\Sleep.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sleep.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menhera_chan\Starting_animation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Starting_animation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menhera_chan\startSCR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>startSCR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menhera_chan\States.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>States.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menhera_chan\Whats_up_reactions.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Whats_up_reactions.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Eating\requestToEat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Eating\eating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Eating\finishedEating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Heal\Heal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Playing\requestToPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Playing\playing_anim\playing1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Playing\playing_anim\playing2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Reactions_on_rejections\reactionOnRejection_badMood0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Reactions_on_rejections\reactionOnRejection_mediumMood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Reactions_on_rejections\reactionOnRejectionInGoodMood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Reactions_on_rejections\reactionOnRejection_badMood1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Reactions_on_rejections\reactionOnRejection_badMood2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Reactions_on_rejections\reactionOnRejection_badMood3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Sleep\sleep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Sleep\sleeping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Sleep\wakingUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Starting_animation\gettingInGame_Frame1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Starting_animation\gettingInGame_Frame2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Starting_animation\gettingInGame_Frame3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Starting_animation\gettingInGame_Frame4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\States\badMoodState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\States\goodMoodState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\States\mediumMoodState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Whats_up_reactions\reactionOnWhatsUp_badMood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Whats_up_reactions\reactionOnWhatsUp_goodMood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\Whats_up_reactions\reactionOnWhatsUp_mediumMood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menhera_chan\startScreen.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
